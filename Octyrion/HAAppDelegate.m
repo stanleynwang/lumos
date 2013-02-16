@@ -7,6 +7,7 @@
 //
 
 #import "HAAppDelegate.h"
+#import <CoreLocation/CoreLocation.h>
 
 @implementation HAAppDelegate
 
