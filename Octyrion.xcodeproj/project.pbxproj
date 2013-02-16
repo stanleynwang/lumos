@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BE0F15D16D0224F002504AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0F15C16D0224F002504AE /* UIKit.framework */; };
+		7BE0F15F16D0224F002504AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0F15E16D0224F002504AE /* Foundation.framework */; };
+		7BE0F16116D0224F002504AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0F16016D0224F002504AE /* CoreGraphics.framework */; };
+		7BE0F16716D0224F002504AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F16516D0224F002504AE /* InfoPlist.strings */; };
+		7BE0F16916D0224F002504AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0F16816D0224F002504AE /* main.m */; };
+		7BE0F16D16D0224F002504AE /* HAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0F16C16D0224F002504AE /* HAAppDelegate.m */; };
+		7BE0F16F16D02250002504AE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F16E16D02250002504AE /* Default.png */; };
+		7BE0F17116D02250002504AE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17016D02250002504AE /* Default@2x.png */; };
+		7BE0F17316D02250002504AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17216D02250002504AE /* Default-568h@2x.png */; };
+		7BE0F17616D02250002504AE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17416D02250002504AE /* MainStoryboard.storyboard */; };
+		7BE0F17916D02250002504AE /* HAFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0F17816D02250002504AE /* HAFirstViewController.m */; };
+		7BE0F17B16D02250002504AE /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17A16D02250002504AE /* first.png */; };
+		7BE0F17D16D02250002504AE /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17C16D02250002504AE /* first@2x.png */; };
+		7BE0F18016D02250002504AE /* HASecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0F17F16D02250002504AE /* HASecondViewController.m */; };
+		7BE0F18216D02250002504AE /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F18116D02250002504AE /* second.png */; };
+		7BE0F18416D02250002504AE /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F18316D02250002504AE /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7BE0F15916D0224F002504AE /* Octyrion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octyrion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE0F15C16D0224F002504AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7BE0F15E16D0224F002504AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7BE0F16016D0224F002504AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7BE0F16416D0224F002504AE /* Octyrion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Octyrion-Info.plist"; sourceTree = "<group>"; };
+		7BE0F16616D0224F002504AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BE0F16816D0224F002504AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BE0F16A16D0224F002504AE /* Octyrion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Octyrion-Prefix.pch"; sourceTree = "<group>"; };
+		7BE0F16B16D0224F002504AE /* HAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAAppDelegate.h; sourceTree = "<group>"; };
+		7BE0F16C16D0224F002504AE /* HAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAAppDelegate.m; sourceTree = "<group>"; };
+		7BE0F16E16D02250002504AE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7BE0F17016D02250002504AE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7BE0F17216D02250002504AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7BE0F17516D02250002504AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7BE0F17716D02250002504AE /* HAFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAFirstViewController.h; sourceTree = "<group>"; };
+		7BE0F17816D02250002504AE /* HAFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAFirstViewController.m; sourceTree = "<group>"; };
+		7BE0F17A16D02250002504AE /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		7BE0F17C16D02250002504AE /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		7BE0F17E16D02250002504AE /* HASecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HASecondViewController.h; sourceTree = "<group>"; };
+		7BE0F17F16D02250002504AE /* HASecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HASecondViewController.m; sourceTree = "<group>"; };
+		7BE0F18116D02250002504AE /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		7BE0F18316D02250002504AE /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BE0F15616D0224F002504AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE0F15D16D0224F002504AE /* UIKit.framework in Frameworks */,
+				7BE0F15F16D0224F002504AE /* Foundation.framework in Frameworks */,
+				7BE0F16116D0224F002504AE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BE0F15016D0224F002504AE = {
+			isa = PBXGroup;
+			children = (
+				7BE0F16216D0224F002504AE /* Octyrion */,
+				7BE0F15B16D0224F002504AE /* Frameworks */,
+				7BE0F15A16D0224F002504AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BE0F15A16D0224F002504AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BE0F15916D0224F002504AE /* Octyrion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BE0F15B16D0224F002504AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BE0F15C16D0224F002504AE /* UIKit.framework */,
+				7BE0F15E16D0224F002504AE /* Foundation.framework */,
+				7BE0F16016D0224F002504AE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BE0F16216D0224F002504AE /* Octyrion */ = {
+			isa = PBXGroup;
+			children = (
+				7BE0F16B16D0224F002504AE /* HAAppDelegate.h */,
+				7BE0F16C16D0224F002504AE /* HAAppDelegate.m */,
+				7BE0F17416D02250002504AE /* MainStoryboard.storyboard */,
+				7BE0F17716D02250002504AE /* HAFirstViewController.h */,
+				7BE0F17816D02250002504AE /* HAFirstViewController.m */,
+				7BE0F17A16D02250002504AE /* first.png */,
+				7BE0F17C16D02250002504AE /* first@2x.png */,
+				7BE0F17E16D02250002504AE /* HASecondViewController.h */,
+				7BE0F17F16D02250002504AE /* HASecondViewController.m */,
+				7BE0F18116D02250002504AE /* second.png */,
+				7BE0F18316D02250002504AE /* second@2x.png */,
+				7BE0F16316D0224F002504AE /* Supporting Files */,
+			);
+			path = Octyrion;
+			sourceTree = "<group>";
+		};
+		7BE0F16316D0224F002504AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BE0F16416D0224F002504AE /* Octyrion-Info.plist */,
+				7BE0F16516D0224F002504AE /* InfoPlist.strings */,
+				7BE0F16816D0224F002504AE /* main.m */,
+				7BE0F16A16D0224F002504AE /* Octyrion-Prefix.pch */,
+				7BE0F16E16D02250002504AE /* Default.png */,
+				7BE0F17016D02250002504AE /* Default@2x.png */,
+				7BE0F17216D02250002504AE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BE0F15816D0224F002504AE /* Octyrion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE0F18716D02250002504AE /* Build configuration list for PBXNativeTarget "Octyrion" */;
+			buildPhases = (
+				7BE0F15516D0224F002504AE /* Sources */,
+				7BE0F15616D0224F002504AE /* Frameworks */,
+				7BE0F15716D0224F002504AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Octyrion;
+			productName = Octyrion;
+			productReference = 7BE0F15916D0224F002504AE /* Octyrion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BE0F15116D0224F002504AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HA;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Wilson Lee";
+			};
+			buildConfigurationList = 7BE0F15416D0224F002504AE /* Build configuration list for PBXProject "Octyrion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7BE0F15016D0224F002504AE;
+			productRefGroup = 7BE0F15A16D0224F002504AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BE0F15816D0224F002504AE /* Octyrion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BE0F15716D0224F002504AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE0F16716D0224F002504AE /* InfoPlist.strings in Resources */,
+				7BE0F16F16D02250002504AE /* Default.png in Resources */,
+				7BE0F17116D02250002504AE /* Default@2x.png in Resources */,
+				7BE0F17316D02250002504AE /* Default-568h@2x.png in Resources */,
+				7BE0F17616D02250002504AE /* MainStoryboard.storyboard in Resources */,
+				7BE0F17B16D02250002504AE /* first.png in Resources */,
+				7BE0F17D16D02250002504AE /* first@2x.png in Resources */,
+				7BE0F18216D02250002504AE /* second.png in Resources */,
+				7BE0F18416D02250002504AE /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BE0F15516D0224F002504AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE0F16916D0224F002504AE /* main.m in Sources */,
+				7BE0F16D16D0224F002504AE /* HAAppDelegate.m in Sources */,
+				7BE0F17916D02250002504AE /* HAFirstViewController.m in Sources */,
+				7BE0F18016D02250002504AE /* HASecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7BE0F16516D0224F002504AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE0F16616D0224F002504AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7BE0F17416D02250002504AE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE0F17516D02250002504AE /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BE0F18516D02250002504AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7BE0F18616D02250002504AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BE0F18816D02250002504AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Octyrion/Octyrion-Prefix.pch";
+				INFOPLIST_FILE = "Octyrion/Octyrion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7BE0F18916D02250002504AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Octyrion/Octyrion-Prefix.pch";
+				INFOPLIST_FILE = "Octyrion/Octyrion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BE0F15416D0224F002504AE /* Build configuration list for PBXProject "Octyrion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE0F18516D02250002504AE /* Debug */,
+				7BE0F18616D02250002504AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE0F18716D02250002504AE /* Build configuration list for PBXNativeTarget "Octyrion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE0F18816D02250002504AE /* Debug */,
+				7BE0F18916D02250002504AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BE0F15116D0224F002504AE /* Project object */;
+}
