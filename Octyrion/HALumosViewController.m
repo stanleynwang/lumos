@@ -8,11 +8,11 @@
 
 #import "HAFirstViewController.h"
 
-@interface HAFirstViewController ()
+@interface HALumosViewController ()
 
 @end
 
-@implementation HAFirstViewController
+@implementation HALumosViewController
 
 - (void)viewDidLoad
 {

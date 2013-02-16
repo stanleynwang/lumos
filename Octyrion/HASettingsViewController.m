@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Wilson Lee. All rights reserved.
 //
 
-#import "HASecondViewController.h"
+#import "HASettingsViewController.h"
 
-@interface HASecondViewController ()
+@interface HASettingsViewController ()
 
 @end
 
-@implementation HASecondViewController
+@implementation HASettingsViewController
 
 - (void)viewDidLoad
 {

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HASecondViewController : UIViewController
+@interface HASettingsViewController : UIViewController
 
 @end
