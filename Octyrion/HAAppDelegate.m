@@ -7,14 +7,49 @@
 //
 
 #import "HAAppDelegate.h"
-#import <CoreLocation/CoreLocation.h>
+
+@interface HAAppDelegate ()
+
+@property (strong, nonatomic) CLLocationManager *locationManager;
+
+@end
 
 @implementation HAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  // Override point for customization after application launch.
+  if (nil == self.locationManager)
+    self.locationManager = [[CLLocationManager alloc] init];
+
+  CLLocationManager *locationManager = self.locationManager;
+  locationManager.delegate = self;
+
   return YES;
+}
+
+- (BOOL)hardwareDoesSupport
+{
+  return [CLLocationManager regionMonitoringAvailable];
+}
+
+- (BOOL)permissionUnauthorized
+{
+  CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+
+  if (status == kCLAuthorizationStatusAuthorized ||
+      status == kCLAuthorizationStatusNotDetermined)
+    return YES;
+  return NO;
+}
+
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
+{
+  //
+}
+
+- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
+{
+  //
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
