@@ -1,8 +1,7 @@
 #import "HAAppDelegate.h"
+#import "HALumosViewController.h"
 
 @interface HAAppDelegate ()
-
-@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
 
@@ -10,44 +9,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  if (nil == self.locationManager)
-    self.locationManager = [[CLLocationManager alloc] init];
-
-  CLLocationManager *locationManager = self.locationManager;
-  locationManager.delegate = self;
-
+//  UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+//  UINavigationController *navigationController = [[tabBarController viewControllers] objectAtIndex:0];
+//  HALumosViewController *lumosViewController = (HALumosViewController *)navigationController;
+//  NSLog(@"nav = %@\n", lumosViewController);
+//
+//  [lumosViewController loadView];
+  
   return YES;
 }
 
-- (BOOL)hardwareDoesSupport
-{
-  return [CLLocationManager regionMonitoringAvailable];
-}
 
-- (BOOL)permissionUnauthorized
-{
-  CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
-
-  if (status == kCLAuthorizationStatusAuthorized ||
-      status == kCLAuthorizationStatusNotDetermined)
-    return YES;
-  return NO;
-}
-
-- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
-{
-  //
-}
-
-- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
-{
-  //
-}
-
-- (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region
-{
-  //
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface HALumosViewController : UIViewController<UIWebViewDelegate>
+@interface HALumosViewController : UIViewController<CLLocationManagerDelegate,UIWebViewDelegate>
 
 @end
