@@ -234,6 +234,9 @@
         </class>
         <class className="HABulbControlViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HABulbControlViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="settings:"/>
+            </relationships>
         </class>
         <class className="HABulbListTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HABulbListTableViewController.h"/>
