@@ -1,5 +1,5 @@
 #import "HAAppDelegate.h"
-#import "HALumosViewController.h"
+#import "HADashboardViewController.h"
 
 @interface HAAppDelegate ()
 

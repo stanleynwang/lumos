@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C2034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Xfg-Rf-9yN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Xfg-Rf-9yN">
     <dependencies>
         <deployment version="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="eQk-Cd-p6c" kind="relationship" relationship="rootViewController" id="OPU-WC-I5w"/>
+                        <segue destination="V2M-pj-O7X" kind="relationship" relationship="rootViewController" id="5Nf-9H-fcg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B7F-wK-JZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -23,15 +23,71 @@
         <!--View Controller-->
         <scene sceneID="t9A-Hz-NKe">
             <objects>
-                <viewController id="sVC-wc-TpK" sceneMemberID="viewController"/>
+                <viewController id="sVC-wc-TpK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dFw-vq-BxD"/>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oo5-LU-gr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1162" y="-765"/>
+            <point key="canvasLocation" x="1669" y="-760"/>
         </scene>
-        <!--Lumos View Controller-->
+        <!--Dashboard View Controller-->
+        <scene sceneID="XRv-tn-tZK">
+            <objects>
+                <viewController id="V2M-pj-O7X" customClass="HADashboardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ijw-qn-RyF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5NH-Fx-mVz">
+                                <rect key="frame" x="102" y="217" width="115" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Bulb Control">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eQk-Cd-p6c" kind="push" id="WAD-0z-MCV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o0H-SB-ETl">
+                                <rect key="frame" x="40" y="155" width="240" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Set Current Location as Home">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setCurrentLocation" destination="V2M-pj-O7X" eventType="touchUpInside" id="5K7-uU-udc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="house.png" id="snK-86-fWT">
+                                <rect key="frame" x="128" y="65" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WWG-sB-3zP"/>
+                    <connections>
+                        <outlet property="SetCurrentLocationButton" destination="o0H-SB-ETl" id="2d1-H7-V0I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhf-fL-eTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="-144"/>
+        </scene>
+        <!--Bulb Control View Controller-->
         <scene sceneID="eWa-Hr-mJL">
             <objects>
-                <viewController id="eQk-Cd-p6c" customClass="HALumosViewController" sceneMemberID="viewController">
+                <viewController id="eQk-Cd-p6c" customClass="HABulbControlViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gVW-hp-ZWW">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,7 +105,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="D6F-ob-Tap" kind="embed" id="zFz-mQ-GTx"/>
+                                    <segue destination="WQS-wd-PQu" kind="embed" id="vYo-OK-j4l"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -59,14 +115,14 @@
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="mpq-Nn-djk">
                             <connections>
                                 <action selector="settings:" destination="eQk-Cd-p6c" id="qRs-He-Fop"/>
-                                <segue destination="sVC-wc-TpK" kind="modal" id="k8v-bo-Jge"/>
+                                <segue destination="sVC-wc-TpK" kind="push" id="d3R-1q-P6F"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g52-VH-jlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="-148"/>
+            <point key="canvasLocation" x="1281" y="-143"/>
         </scene>
         <!--Color Picker View Controller-->
         <scene sceneID="abL-Fq-ooZ">
@@ -106,46 +162,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jed-Aa-a6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1313" y="-169"/>
+            <point key="canvasLocation" x="1820" y="-164"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="4Fm-Vy-CNe">
+        <!--Bulb List Table View Controller-->
+        <scene sceneID="VeC-bW-u9B">
             <objects>
-                <viewController id="D6F-ob-Tap" sceneMemberID="viewController">
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lib-ki-eCN">
+                <tableViewController id="WQS-wd-PQu" customClass="HABulbListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kS5-Cm-ZAV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Xza-Wk-Jnk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="LampCell" id="cQe-3O-yei">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i1w-YS-SIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BulbCell" id="D2k-w9-pJ3" customClass="HABulbListTableViewCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AVF-Nl-Fb7">
+                                            <rect key="frame" x="20" y="11" width="243" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" id="uoR-bB-skD">
+                                            <rect key="frame" x="283" y="6" width="31" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WQS-wd-PQu" id="WDn-f8-3pi"/>
+                            <outlet property="delegate" destination="WQS-wd-PQu" id="lu3-my-zKi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMQ-2q-Ydh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1313" y="156"/>
+            <point key="canvasLocation" x="1820" y="141"/>
         </scene>
     </scenes>
     <resources>
         <image name="bar_select.png" width="16" height="16"/>
         <image name="colormap.png" width="16" height="16"/>
         <image name="crosshair.png" width="16" height="16"/>
+        <image name="house.png" width="134" height="134"/>
     </resources>
     <classes>
         <class className="FCBrightDarkGradView" superclassName="UIView">
@@ -154,6 +220,8 @@
         <class className="FCColorPickerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FCColorPickerViewController.h"/>
             <relationships>
+                <relationship kind="action" name="cancelColorSelection"/>
+                <relationship kind="action" name="chooseSelectedColor"/>
                 <relationship kind="outlet" name="brightnessBar" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="crossHairs" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="gradientView" candidateClass="FCBrightDarkGradView"/>
@@ -164,10 +232,17 @@
         <class className="FCColorSwatchView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FCColorSwatchView.h"/>
         </class>
-        <class className="HALumosViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HALumosViewController.h"/>
+        <class className="HABulbControlViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HABulbControlViewController.h"/>
+        </class>
+        <class className="HABulbListTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HABulbListTableViewController.h"/>
+        </class>
+        <class className="HADashboardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HADashboardViewController.h"/>
             <relationships>
-                <relationship kind="action" name="settings:"/>
+                <relationship kind="action" name="setCurrentLocation"/>
+                <relationship kind="outlet" name="SetCurrentLocationButton" candidateClass="UIButton"/>
             </relationships>
         </class>
     </classes>
