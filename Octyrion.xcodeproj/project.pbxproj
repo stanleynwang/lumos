@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0119849E16D12FC50032A109 /* HABulbControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0119849316D12FC50032A109 /* HABulbControlViewController.m */; };
+		0119849F16D12FC50032A109 /* HABulb.m in Sources */ = {isa = PBXBuildFile; fileRef = 0119849516D12FC50032A109 /* HABulb.m */; };
+		011984A016D12FC50032A109 /* HABulbListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0119849816D12FC50032A109 /* HABulbListTableViewController.m */; };
+		011984A116D12FC50032A109 /* HADashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0119849A16D12FC50032A109 /* HADashboardViewController.m */; };
+		011984A216D12FC50032A109 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 0119849B16D12FC50032A109 /* house.png */; };
+		011984A316D12FC50032A109 /* UIImage+JTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0119849D16D12FC50032A109 /* UIImage+JTColor.m */; };
 		2E9C9DD300E24914908ADCCC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01C227F5154942904880CD /* libPods.a */; };
 		7B43673916D03E43004ECB63 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B43673816D03E43004ECB63 /* CoreLocation.framework */; };
 		7B9CBDB116D0FD950027B3E7 /* HARemoteHueLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9CBDB016D0FD950027B3E7 /* HARemoteHueLight.m */; };
@@ -21,14 +27,23 @@
 		7BE0F17116D02250002504AE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17016D02250002504AE /* Default@2x.png */; };
 		7BE0F17316D02250002504AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17216D02250002504AE /* Default-568h@2x.png */; };
 		7BE0F17616D02250002504AE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17416D02250002504AE /* MainStoryboard.storyboard */; };
-		7BE0F17916D02250002504AE /* HALumosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0F17816D02250002504AE /* HALumosViewController.m */; };
 		7BE0F17B16D02250002504AE /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17A16D02250002504AE /* first.png */; };
 		7BE0F17D16D02250002504AE /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17C16D02250002504AE /* first@2x.png */; };
-		7BE0F18016D02250002504AE /* HASettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0F17F16D02250002504AE /* HASettingsViewController.m */; };
 		7BEF119616D0D72D00BFED0B /* HARemoteHue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF119516D0D72D00BFED0B /* HARemoteHue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0119849316D12FC50032A109 /* HABulbControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABulbControlViewController.m; sourceTree = "<group>"; };
+		0119849416D12FC50032A109 /* HABulb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABulb.h; sourceTree = "<group>"; };
+		0119849516D12FC50032A109 /* HABulb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABulb.m; sourceTree = "<group>"; };
+		0119849616D12FC50032A109 /* HABulbControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABulbControlViewController.h; sourceTree = "<group>"; };
+		0119849716D12FC50032A109 /* HABulbListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABulbListTableViewController.h; sourceTree = "<group>"; };
+		0119849816D12FC50032A109 /* HABulbListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABulbListTableViewController.m; sourceTree = "<group>"; };
+		0119849916D12FC50032A109 /* HADashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HADashboardViewController.h; sourceTree = "<group>"; };
+		0119849A16D12FC50032A109 /* HADashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HADashboardViewController.m; sourceTree = "<group>"; };
+		0119849B16D12FC50032A109 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		0119849C16D12FC50032A109 /* UIImage+JTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JTColor.h"; sourceTree = "<group>"; };
+		0119849D16D12FC50032A109 /* UIImage+JTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JTColor.m"; sourceTree = "<group>"; };
 		4C01C227F5154942904880CD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B43673816D03E43004ECB63 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7B9CBDAF16D0FD950027B3E7 /* HARemoteHueLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARemoteHueLight.h; sourceTree = "<group>"; };
@@ -49,8 +64,6 @@
 		7BE0F17016D02250002504AE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7BE0F17216D02250002504AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7BE0F17516D02250002504AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		7BE0F17716D02250002504AE /* HALumosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HALumosViewController.h; sourceTree = "<group>"; };
-		7BE0F17816D02250002504AE /* HALumosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HALumosViewController.m; sourceTree = "<group>"; tabWidth = 2; };
 		7BE0F17A16D02250002504AE /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		7BE0F17C16D02250002504AE /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		7BEF119416D0D72D00BFED0B /* HARemoteHue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARemoteHue.h; sourceTree = "<group>"; };
@@ -107,13 +120,22 @@
 		7BE0F16216D0224F002504AE /* Octyrion */ = {
 			isa = PBXGroup;
 			children = (
+				0119849316D12FC50032A109 /* HABulbControlViewController.m */,
+				0119849416D12FC50032A109 /* HABulb.h */,
+				0119849516D12FC50032A109 /* HABulb.m */,
+				0119849616D12FC50032A109 /* HABulbControlViewController.h */,
+				0119849716D12FC50032A109 /* HABulbListTableViewController.h */,
+				0119849816D12FC50032A109 /* HABulbListTableViewController.m */,
+				0119849916D12FC50032A109 /* HADashboardViewController.h */,
+				0119849A16D12FC50032A109 /* HADashboardViewController.m */,
+				0119849B16D12FC50032A109 /* house.png */,
+				0119849C16D12FC50032A109 /* UIImage+JTColor.h */,
+				0119849D16D12FC50032A109 /* UIImage+JTColor.m */,
 				7B9CBDAF16D0FD950027B3E7 /* HARemoteHueLight.h */,
 				7B9CBDB016D0FD950027B3E7 /* HARemoteHueLight.m */,
 				7BE0F16B16D0224F002504AE /* HAAppDelegate.h */,
 				7BE0F16C16D0224F002504AE /* HAAppDelegate.m */,
 				7BE0F17416D02250002504AE /* MainStoryboard.storyboard */,
-				7BE0F17716D02250002504AE /* HALumosViewController.h */,
-				7BE0F17816D02250002504AE /* HALumosViewController.m */,
 				7BEF119416D0D72D00BFED0B /* HARemoteHue.h */,
 				7BEF119516D0D72D00BFED0B /* HARemoteHue.m */,
 				7BE0F17A16D02250002504AE /* first.png */,
@@ -199,6 +221,7 @@
 				7BE0F17616D02250002504AE /* MainStoryboard.storyboard in Resources */,
 				7BE0F17B16D02250002504AE /* first.png in Resources */,
 				7BE0F17D16D02250002504AE /* first@2x.png in Resources */,
+				011984A216D12FC50032A109 /* house.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +251,14 @@
 			files = (
 				7BE0F16916D0224F002504AE /* main.m in Sources */,
 				7BE0F16D16D0224F002504AE /* HAAppDelegate.m in Sources */,
-				7BE0F17916D02250002504AE /* HALumosViewController.m in Sources */,
 				7BEF119616D0D72D00BFED0B /* HARemoteHue.m in Sources */,
 				7B9CBDB116D0FD950027B3E7 /* HARemoteHueLight.m in Sources */,
 				7B9CBDB416D0FF090027B3E7 /* NSDictionary+Utilities.m in Sources */,
+				0119849E16D12FC50032A109 /* HABulbControlViewController.m in Sources */,
+				0119849F16D12FC50032A109 /* HABulb.m in Sources */,
+				011984A016D12FC50032A109 /* HABulbListTableViewController.m in Sources */,
+				011984A116D12FC50032A109 /* HADashboardViewController.m in Sources */,
+				011984A316D12FC50032A109 /* UIImage+JTColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
