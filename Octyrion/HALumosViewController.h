@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
 
-@interface HALumosViewController : UIViewController
+@interface HALumosViewController : UIViewController<UIWebViewDelegate>
 
 @end
