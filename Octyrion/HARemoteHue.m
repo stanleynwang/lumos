@@ -219,6 +219,7 @@ static HARemoteHue *_sharedRemoteHue;
     light.baseURL = self.baseURL;
     light.number = [f numberFromString:lightItem];
     light.bridgeId = self.bridgeId;
+    light.remoteHue = self;
     [tmpLights addObject:light];
   }
   self.lights = tmpLights;
