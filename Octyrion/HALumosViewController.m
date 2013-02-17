@@ -58,6 +58,7 @@
     CLRegion *old = [[CLRegion alloc] initCircularRegionWithCenter:oldLocation radius:REGION_RADIUS identifier:@"home"];
     
     [self.locationManager stopMonitoringForRegion:old];
+    [self messagePrefix:@"Stopped monitoring" withRegion:old];
   }
   
   // get current location
