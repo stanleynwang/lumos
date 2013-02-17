@@ -22,9 +22,6 @@
 		7BE0F17916D02250002504AE /* HALumosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0F17816D02250002504AE /* HALumosViewController.m */; };
 		7BE0F17B16D02250002504AE /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17A16D02250002504AE /* first.png */; };
 		7BE0F17D16D02250002504AE /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17C16D02250002504AE /* first@2x.png */; };
-		7BE0F18016D02250002504AE /* HASettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0F17F16D02250002504AE /* HASettingsViewController.m */; };
-		7BE0F18216D02250002504AE /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F18116D02250002504AE /* second.png */; };
-		7BE0F18416D02250002504AE /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F18316D02250002504AE /* second@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,10 +45,6 @@
 		7BE0F17816D02250002504AE /* HALumosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HALumosViewController.m; sourceTree = "<group>"; tabWidth = 2; };
 		7BE0F17A16D02250002504AE /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		7BE0F17C16D02250002504AE /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		7BE0F17E16D02250002504AE /* HASettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HASettingsViewController.h; sourceTree = "<group>"; };
-		7BE0F17F16D02250002504AE /* HASettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HASettingsViewController.m; sourceTree = "<group>"; };
-		7BE0F18116D02250002504AE /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		7BE0F18316D02250002504AE /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		A5BEDCD476384BD4916B5D4C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -111,10 +104,6 @@
 				7BE0F17816D02250002504AE /* HALumosViewController.m */,
 				7BE0F17A16D02250002504AE /* first.png */,
 				7BE0F17C16D02250002504AE /* first@2x.png */,
-				7BE0F17E16D02250002504AE /* HASettingsViewController.h */,
-				7BE0F17F16D02250002504AE /* HASettingsViewController.m */,
-				7BE0F18116D02250002504AE /* second.png */,
-				7BE0F18316D02250002504AE /* second@2x.png */,
 				7BE0F16316D0224F002504AE /* Supporting Files */,
 			);
 			path = Octyrion;
@@ -194,8 +183,6 @@
 				7BE0F17616D02250002504AE /* MainStoryboard.storyboard in Resources */,
 				7BE0F17B16D02250002504AE /* first.png in Resources */,
 				7BE0F17D16D02250002504AE /* first@2x.png in Resources */,
-				7BE0F18216D02250002504AE /* second.png in Resources */,
-				7BE0F18416D02250002504AE /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +213,6 @@
 				7BE0F16916D0224F002504AE /* main.m in Sources */,
 				7BE0F16D16D0224F002504AE /* HAAppDelegate.m in Sources */,
 				7BE0F17916D02250002504AE /* HALumosViewController.m in Sources */,
-				7BE0F18016D02250002504AE /* HASettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

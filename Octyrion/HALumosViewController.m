@@ -26,6 +26,15 @@ enum HARemoteState {
   [super viewDidLoad];
 
   // Do any additional setup after loading the view, typically from a nib.
+  FCColorPickerViewController *colorPicker = [[FCColorPickerViewController alloc]
+                                              initWithNibName:@"FCColorPickerViewController"
+                                              bundle:[NSBundle mainBundle]];
+  
+  colorPicker.color = self.view.backgroundColor;
+  colorPicker.delegate = self;
+  
+  [colorPicker setModalPresentationStyle:UIModalPresentationFormSheet];
+  [self presentViewController:colorPicker animated:YES completion:nil];
   
   [self initializeLocationManager];
 
@@ -34,6 +43,15 @@ enum HARemoteState {
   self.webView.delegate = self;
 
   [self beginLogin];
+}
+
+-(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
+  self.view.backgroundColor = color;
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)colorPickerViewControllerDidCancel:(FCColorPickerViewController *)colorPicker {
+  [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
