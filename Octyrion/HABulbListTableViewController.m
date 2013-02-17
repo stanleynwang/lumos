@@ -126,4 +126,22 @@
      */
 }
 
+- (void)HABulbControlViewController:(HABulbControlViewController *)bulbController didSelectColor:(UIColor *)color {
+    NSLog(@"hah");
+
+    HABulb *bulb = [self.bulbs objectAtIndex:0];
+	UILabel *nameLabel = (UILabel *)[self.cell viewWithTag:101];
+    nameLabel.text = bulb.name;
+    UIImageView *colorView = (UIImageView *)[self.cell viewWithTag:100];
+        NSLog(@"color initial: %@", bulb.color);
+    bulb.color = color;
+    colorView.image = [UIImage imageWithColor:bulb.color];
+        [self.tableView reloadData];
+    NSLog(@"color after: %@", bulb.color);
+
+};
+- (void)HABulbControlViewControllerDidCancel:(HABulbControlViewController *)bulbController {
+    
+};
+
 @end

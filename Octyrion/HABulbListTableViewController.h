@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "HABulb.h"
+#import "HABulbControlViewController.h"
 
-@interface HABulbListTableViewController : UITableViewController
+@interface HABulbListTableViewController : UITableViewController<HABulbControlViewControllerDelegate>
     @property (strong, nonatomic) NSMutableArray *bulbs;
+@property (strong, nonatomic) UITableViewCell *firstCell;
+@property (strong, nonatomic) UITableView *cell;
 @end

@@ -105,7 +105,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="WQS-wd-PQu" kind="embed" id="vYo-OK-j4l"/>
+                                    <segue destination="WQS-wd-PQu" kind="embed" identifier="bulblist_embed" id="vYo-OK-j4l"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -133,7 +133,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" image="colormap.png" id="3oI-w6-SwV">
-                                <rect key="frame" x="8" y="9" width="306" height="146"/>
+                                <rect key="frame" x="8" y="9" width="306" height="87"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" image="crosshair.png" id="i0a-F8-AAE">
@@ -145,10 +145,40 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="IMO-Xc-UAl" customClass="FCBrightDarkGradView">
-                                <rect key="frame" x="12" y="160" width="298" height="40"/>
+                                <rect key="frame" x="12" y="104" width="298" height="25"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="asg-K6-G3x">
+                                <rect key="frame" x="8" y="143" width="150" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Choose">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseSelectedColor" destination="Qf9-xn-Jcy" eventType="touchUpInside" id="bLH-Hk-Yl3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zuL-92-syI">
+                                <rect key="frame" x="167" y="143" width="147" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelColorSelection" destination="Qf9-xn-Jcy" eventType="touchUpInside" id="juP-xR-hhM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -158,6 +188,7 @@
                         <outlet property="crossHairs" destination="i0a-F8-AAE" id="QB7-6z-bZt"/>
                         <outlet property="gradientView" destination="IMO-Xc-UAl" id="pe9-OL-yYb"/>
                         <outlet property="hueSatImage" destination="3oI-w6-SwV" id="Pxp-zs-idG"/>
+                        <outlet property="view" destination="mVU-92-mxO" id="7Fe-B0-fbm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jed-Aa-a6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
