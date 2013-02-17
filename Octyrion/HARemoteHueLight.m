@@ -16,6 +16,7 @@
 // @property (nonatomic, strong, readwrite) NSString *baseURL;
 @property (nonatomic, strong, readwrite) NSURL *readURL;
 @property (nonatomic, strong, readwrite) NSURL *writeURL;
+// @property (nonatomic, weak) HARemoteHue *remoteHue;
 
 @end
 
@@ -172,7 +173,6 @@
   NSData *json = [NSJSONSerialization dataWithJSONObject:payload options:0 error:nil];
   NSString *jsonEncoded = [[NSString alloc] initWithData:json encoding:NSUTF8StringEncoding];
   NSString *url = [[self.writeURL description] stringByAppendingFormat:@"?%@", [@{@"clipmessage" : jsonEncoded} queryString]];
-  NSLog(@"url = %@", url);
   NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
   DPJSONConnection *connection = [[DPJSONConnection alloc] initWithRequest:request];
   connection.completionBlock = ^(id obj, NSError *err) {

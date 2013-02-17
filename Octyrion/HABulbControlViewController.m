@@ -17,7 +17,7 @@
 {
   [super viewDidLoad];
 
-  HARemoteHue *hue = [[HARemoteHue alloc] init];
+  HARemoteHue *hue = [HARemoteHue sharedRemoteHue];
   [hue readWithCompletion:^(HARemoteHue *hue, NSError *err) {
     if (err == nil) {
       //[hue allLightsOff];

@@ -7,6 +7,7 @@
 //
 
 #import "HADashboardViewController.h"
+#import "HARemoteHue.h"
 #define REGION_RADIUS 100
 
 
@@ -45,9 +46,8 @@
     if (nil == self.locationManager)
         self.locationManager = [[CLLocationManager alloc] init];
     
-    CLLocationManager *locationManager = self.locationManager;
-    locationManager.delegate = self;
-    
+    self.locationManager.delegate = self;
+    [self.locationManager setDesiredAccuracy: kCLLocationAccuracyBestForNavigation];
     [self.locationManager startUpdatingLocation];
 }
 
@@ -107,11 +107,23 @@
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
 {
     [self messagePrefix:@"Entering" withRegion:region];
+    HARemoteHue *hue = [HARemoteHue sharedRemoteHue];
+    [hue readWithCompletion:^(HARemoteHue *hue, NSError *err) {
+      if (err == nil) {
+        [hue allLightsOn];
+      }
+    }];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
 {
     [self messagePrefix:@"Exiting" withRegion:region];
+    HARemoteHue *hue = [HARemoteHue sharedRemoteHue];
+    [hue readWithCompletion:^(HARemoteHue *hue, NSError *err) {
+      if (err == nil) {
+        [hue allLightsOff];
+      }
+    }];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region

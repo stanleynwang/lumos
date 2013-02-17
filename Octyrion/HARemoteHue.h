@@ -8,6 +8,8 @@
 @property (nonatomic, strong, readonly) NSArray *lights;
 @property (nonatomic, readonly) BOOL authenticated;
 
++ (id)sharedRemoteHue;
+
 - (void)readFromJSONDictionary:(id)d;
 - (void)readWithCompletion:(void (^)(HARemoteHue *, NSError *))block;
 
