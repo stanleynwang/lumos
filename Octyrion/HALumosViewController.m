@@ -8,6 +8,8 @@
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
+@property (weak,nonatomic) FCColorPickerViewController * colorpickerVC;
+
 @end
 
 @implementation HALumosViewController
@@ -15,8 +17,6 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-
-  // Do any additional setup after loading the view, typically from a nib.
   
   [self initializeLocationManager];
 
@@ -26,6 +26,20 @@
       [hue allLightsOff];
     }
   }];
+}
+
+- (IBAction)settings:(id)sender {
+  
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([segue.identifier isEqualToString:@"colorpicker_embed"]) {
+    self.colorpickerVC = segue.destinationViewController;
+  }
+}
+
+-(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
+  self.view.backgroundColor = color;
 }
 
 - (void)initializeLocationManager {

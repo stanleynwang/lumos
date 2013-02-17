@@ -25,8 +25,6 @@
 		7BE0F17B16D02250002504AE /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17A16D02250002504AE /* first.png */; };
 		7BE0F17D16D02250002504AE /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F17C16D02250002504AE /* first@2x.png */; };
 		7BE0F18016D02250002504AE /* HASettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0F17F16D02250002504AE /* HASettingsViewController.m */; };
-		7BE0F18216D02250002504AE /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F18116D02250002504AE /* second.png */; };
-		7BE0F18416D02250002504AE /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F18316D02250002504AE /* second@2x.png */; };
 		7BEF119616D0D72D00BFED0B /* HARemoteHue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF119516D0D72D00BFED0B /* HARemoteHue.m */; };
 /* End PBXBuildFile section */
 
@@ -55,10 +53,6 @@
 		7BE0F17816D02250002504AE /* HALumosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HALumosViewController.m; sourceTree = "<group>"; tabWidth = 2; };
 		7BE0F17A16D02250002504AE /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		7BE0F17C16D02250002504AE /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		7BE0F17E16D02250002504AE /* HASettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HASettingsViewController.h; sourceTree = "<group>"; };
-		7BE0F17F16D02250002504AE /* HASettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HASettingsViewController.m; sourceTree = "<group>"; };
-		7BE0F18116D02250002504AE /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		7BE0F18316D02250002504AE /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		7BEF119416D0D72D00BFED0B /* HARemoteHue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARemoteHue.h; sourceTree = "<group>"; };
 		7BEF119516D0D72D00BFED0B /* HARemoteHue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HARemoteHue.m; sourceTree = "<group>"; };
 		A5BEDCD476384BD4916B5D4C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -124,10 +118,6 @@
 				7BEF119516D0D72D00BFED0B /* HARemoteHue.m */,
 				7BE0F17A16D02250002504AE /* first.png */,
 				7BE0F17C16D02250002504AE /* first@2x.png */,
-				7BE0F17E16D02250002504AE /* HASettingsViewController.h */,
-				7BE0F17F16D02250002504AE /* HASettingsViewController.m */,
-				7BE0F18116D02250002504AE /* second.png */,
-				7BE0F18316D02250002504AE /* second@2x.png */,
 				7BE0F16316D0224F002504AE /* Supporting Files */,
 				7B9CBDB216D0FF090027B3E7 /* NSDictionary+Utilities.h */,
 				7B9CBDB316D0FF090027B3E7 /* NSDictionary+Utilities.m */,
@@ -209,8 +199,6 @@
 				7BE0F17616D02250002504AE /* MainStoryboard.storyboard in Resources */,
 				7BE0F17B16D02250002504AE /* first.png in Resources */,
 				7BE0F17D16D02250002504AE /* first@2x.png in Resources */,
-				7BE0F18216D02250002504AE /* second.png in Resources */,
-				7BE0F18416D02250002504AE /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +229,6 @@
 				7BE0F16916D0224F002504AE /* main.m in Sources */,
 				7BE0F16D16D0224F002504AE /* HAAppDelegate.m in Sources */,
 				7BE0F17916D02250002504AE /* HALumosViewController.m in Sources */,
-				7BE0F18016D02250002504AE /* HASettingsViewController.m in Sources */,
 				7BEF119616D0D72D00BFED0B /* HARemoteHue.m in Sources */,
 				7B9CBDB116D0FD950027B3E7 /* HARemoteHueLight.m in Sources */,
 				7B9CBDB416D0FF090027B3E7 /* NSDictionary+Utilities.m in Sources */,
@@ -296,7 +283,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -320,7 +307,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -334,8 +321,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Octyrion/Octyrion-Prefix.pch";
 				INFOPLIST_FILE = "Octyrion/Octyrion-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -347,8 +335,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Octyrion/Octyrion-Prefix.pch";
 				INFOPLIST_FILE = "Octyrion/Octyrion-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
