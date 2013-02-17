@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface HALumosViewController : UIViewController
+@interface HALumosViewController : UIViewController <CLLocationManagerDelegate>
 
 @end
