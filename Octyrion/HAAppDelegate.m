@@ -9,12 +9,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  // UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-  // UINavigationController *navigationController = [[tabBarController viewControllers] objectAtIndex:0];
-  // HALumosViewController *lumosViewController = (HALumosViewController *)navigationController;
-  // NSLog(@"nav = %@\n", lumosViewController);
-  
-  // [lumosViewController loadView];
+//  UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+//  UINavigationController *navigationController = [[tabBarController viewControllers] objectAtIndex:0];
+//  HALumosViewController *lumosViewController = (HALumosViewController *)navigationController;
+//  NSLog(@"nav = %@\n", lumosViewController);
+//
+//  [lumosViewController loadView];
   
   return YES;
 }
