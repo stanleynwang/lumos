@@ -17,6 +17,8 @@ enum HARemoteState {
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
+@property (weak,nonatomic) FCColorPickerViewController * colorpickerVC;
+
 @end
 
 @implementation HALumosViewController
@@ -24,17 +26,6 @@ enum HARemoteState {
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-
-  // Do any additional setup after loading the view, typically from a nib.
-  FCColorPickerViewController *colorPicker = [[FCColorPickerViewController alloc]
-                                              initWithNibName:@"FCColorPickerViewController"
-                                              bundle:[NSBundle mainBundle]];
-  
-  colorPicker.color = self.view.backgroundColor;
-  colorPicker.delegate = self;
-  
-  [colorPicker setModalPresentationStyle:UIModalPresentationFormSheet];
-  [self presentViewController:colorPicker animated:YES completion:nil];
   
   [self initializeLocationManager];
 
@@ -45,13 +36,18 @@ enum HARemoteState {
   [self beginLogin];
 }
 
--(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
-  self.view.backgroundColor = color;
-  [self dismissViewControllerAnimated:YES completion:nil];
+- (IBAction)settings:(id)sender {
+  
 }
 
--(void)colorPickerViewControllerDidCancel:(FCColorPickerViewController *)colorPicker {
-  [self dismissViewControllerAnimated:YES completion:nil];
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([segue.identifier isEqualToString:@"colorpicker_embed"]) {
+    self.colorpickerVC = segue.destinationViewController;
+  }
+}
+
+-(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
+  self.view.backgroundColor = color;
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
