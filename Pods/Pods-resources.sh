@@ -21,3 +21,9 @@ install_resource()
       ;;
   esac
 }
+install_resource 'iOS-Color-Picker/Resources/bar_select.png'
+install_resource 'iOS-Color-Picker/Resources/bar_select@2x.png'
+install_resource 'iOS-Color-Picker/Resources/colormap.png'
+install_resource 'iOS-Color-Picker/Resources/crosshair.png'
+install_resource 'iOS-Color-Picker/Resources/crosshair@2x.png'
+install_resource 'iOS-Color-Picker/FCColorPickerViewController.xib'
