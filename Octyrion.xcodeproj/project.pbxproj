@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2E9C9DD300E24914908ADCCC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01C227F5154942904880CD /* libPods.a */; };
 		7B43673916D03E43004ECB63 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B43673816D03E43004ECB63 /* CoreLocation.framework */; };
+		7B9CBDB116D0FD950027B3E7 /* HARemoteHueLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9CBDB016D0FD950027B3E7 /* HARemoteHueLight.m */; };
+		7B9CBDB416D0FF090027B3E7 /* NSDictionary+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9CBDB316D0FF090027B3E7 /* NSDictionary+Utilities.m */; };
 		7BE0F15D16D0224F002504AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0F15C16D0224F002504AE /* UIKit.framework */; };
 		7BE0F15F16D0224F002504AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0F15E16D0224F002504AE /* Foundation.framework */; };
 		7BE0F16116D0224F002504AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0F16016D0224F002504AE /* CoreGraphics.framework */; };
@@ -25,11 +27,16 @@
 		7BE0F18016D02250002504AE /* HASettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0F17F16D02250002504AE /* HASettingsViewController.m */; };
 		7BE0F18216D02250002504AE /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F18116D02250002504AE /* second.png */; };
 		7BE0F18416D02250002504AE /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0F18316D02250002504AE /* second@2x.png */; };
+		7BEF119616D0D72D00BFED0B /* HARemoteHue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF119516D0D72D00BFED0B /* HARemoteHue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C01C227F5154942904880CD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B43673816D03E43004ECB63 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7B9CBDAF16D0FD950027B3E7 /* HARemoteHueLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARemoteHueLight.h; sourceTree = "<group>"; };
+		7B9CBDB016D0FD950027B3E7 /* HARemoteHueLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HARemoteHueLight.m; sourceTree = "<group>"; };
+		7B9CBDB216D0FF090027B3E7 /* NSDictionary+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utilities.h"; sourceTree = "<group>"; };
+		7B9CBDB316D0FF090027B3E7 /* NSDictionary+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utilities.m"; sourceTree = "<group>"; };
 		7BE0F15916D0224F002504AE /* Octyrion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octyrion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE0F15C16D0224F002504AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7BE0F15E16D0224F002504AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,6 +59,8 @@
 		7BE0F17F16D02250002504AE /* HASettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HASettingsViewController.m; sourceTree = "<group>"; };
 		7BE0F18116D02250002504AE /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		7BE0F18316D02250002504AE /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		7BEF119416D0D72D00BFED0B /* HARemoteHue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARemoteHue.h; sourceTree = "<group>"; };
+		7BEF119516D0D72D00BFED0B /* HARemoteHue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HARemoteHue.m; sourceTree = "<group>"; };
 		A5BEDCD476384BD4916B5D4C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -104,11 +113,15 @@
 		7BE0F16216D0224F002504AE /* Octyrion */ = {
 			isa = PBXGroup;
 			children = (
+				7B9CBDAF16D0FD950027B3E7 /* HARemoteHueLight.h */,
+				7B9CBDB016D0FD950027B3E7 /* HARemoteHueLight.m */,
 				7BE0F16B16D0224F002504AE /* HAAppDelegate.h */,
 				7BE0F16C16D0224F002504AE /* HAAppDelegate.m */,
 				7BE0F17416D02250002504AE /* MainStoryboard.storyboard */,
 				7BE0F17716D02250002504AE /* HALumosViewController.h */,
 				7BE0F17816D02250002504AE /* HALumosViewController.m */,
+				7BEF119416D0D72D00BFED0B /* HARemoteHue.h */,
+				7BEF119516D0D72D00BFED0B /* HARemoteHue.m */,
 				7BE0F17A16D02250002504AE /* first.png */,
 				7BE0F17C16D02250002504AE /* first@2x.png */,
 				7BE0F17E16D02250002504AE /* HASettingsViewController.h */,
@@ -116,6 +129,8 @@
 				7BE0F18116D02250002504AE /* second.png */,
 				7BE0F18316D02250002504AE /* second@2x.png */,
 				7BE0F16316D0224F002504AE /* Supporting Files */,
+				7B9CBDB216D0FF090027B3E7 /* NSDictionary+Utilities.h */,
+				7B9CBDB316D0FF090027B3E7 /* NSDictionary+Utilities.m */,
 			);
 			path = Octyrion;
 			sourceTree = "<group>";
@@ -227,6 +242,9 @@
 				7BE0F16D16D0224F002504AE /* HAAppDelegate.m in Sources */,
 				7BE0F17916D02250002504AE /* HALumosViewController.m in Sources */,
 				7BE0F18016D02250002504AE /* HASettingsViewController.m in Sources */,
+				7BEF119616D0D72D00BFED0B /* HARemoteHue.m in Sources */,
+				7B9CBDB116D0FD950027B3E7 /* HARemoteHueLight.m in Sources */,
+				7B9CBDB416D0FF090027B3E7 /* NSDictionary+Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
