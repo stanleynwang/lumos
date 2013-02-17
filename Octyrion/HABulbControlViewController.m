@@ -6,7 +6,7 @@
 
 @interface HABulbControlViewController ()
 
-@property (weak,nonatomic) FCColorPickerViewController * colorpickerVC;
+@property (weak, nonatomic) FCColorPickerViewController *colorpickerVC;
 
 @end
 
@@ -16,10 +16,10 @@
 {
   [super viewDidLoad];
 
-  HARemoteHue *hue = [[HARemoteHue alloc] init];
+  HARemoteHue *hue = [HARemoteHue sharedRemoteHue];
   [hue readWithCompletion:^(HARemoteHue *hue, NSError *err) {
     if (err == nil) {
-      [hue allLightsOff];
+      //[hue allLightsOff];
     }
   }];
 }

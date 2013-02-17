@@ -22,6 +22,16 @@
 
 @implementation HARemoteHue
 
+static HARemoteHue *_sharedRemoteHue;
+
++ (id)sharedRemoteHue
+{
+  if (_sharedRemoteHue == nil) {
+    _sharedRemoteHue = [[self alloc] init];
+  }
+  return _sharedRemoteHue;
+}
+
 - (id)init
 {
   self = [super init];
@@ -64,6 +74,7 @@
   DPJSONConnection *connection = [[DPJSONConnection alloc] initWithRequest:req];
   connection.completionBlock = ^(NSData *data, NSError *err) {
     NSString *resp = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"resp = %@", resp);
     NSString *pattern = @"name=\"authenticityToken\" value=\"(.+)\"";
     NSRegularExpression *r = [NSRegularExpression
                               regularExpressionWithPattern:pattern
@@ -75,7 +86,7 @@
                                     range:NSMakeRange(0, resp.length)];
     NSRange range = [result rangeAtIndex:1];
     if (range.length == 0) {
-      // *err = //;
+      NSError *error = [NSError errorWithDomain:nil code:-1 userInfo:@{}];
       NSLog(@"Error in fetchLogin");
       return;
     }
@@ -107,6 +118,7 @@
       NSDictionary *state = [self parseStateFromResponse:resp];
       _bridgeId = state[@"bridgeId"];
       [self readFromJSONDictionary:state[@"appData"]];
+      self.authenticated = YES;
     }
     block(self, err);
   };
