@@ -1,4 +1,4 @@
-#import "DPHueLight.h"
+#import "HARemoteHue.h"
 #import <DPHue/DPJSONSerializable.h>
 
 @interface HARemoteHueLight : NSObject<DPJSONSerializable>
@@ -67,6 +67,9 @@
 
 // Lamp model ID.
 @property (nonatomic, strong, readonly) NSString *modelid;
+
+// Weak parent pointer to original connection.
+@property (nonatomic, weak) HARemoteHue *remoteHue;
 
 
 // Properties you can probably ignore
