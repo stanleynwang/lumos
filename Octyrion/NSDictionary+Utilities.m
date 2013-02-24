@@ -4,7 +4,7 @@
 
 - (NSString *)queryString
 {
-  NSMutableArray *pairs = [[NSMutableArray alloc] init];
+  NSMutableArray *pairs = [NSMutableArray arrayWithCapacity:[self count]];
   for (id key in self) {
     NSString *value = [[self objectForKey:key] description];
     NSString *pair = [NSString stringWithFormat:@"%@=%@", key, [value stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
